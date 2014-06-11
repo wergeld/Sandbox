@@ -1,6 +1,5 @@
 Public NotInheritable Class Log
-    Private Shared ReadOnly _instance As New Lazy(Of MySingleton)(Function() New
-        Log(), System.Threading.LazyThreadSafetyMode.ExecutionAndPublication)
+    Private Shared ReadOnly _instance As New Lazy(Of Log)(Function() New Log(), System.Threading.LazyThreadSafetyMode.ExecutionAndPublication)
 
     Private Sub New()
     End Sub
