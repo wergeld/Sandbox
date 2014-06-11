@@ -9,6 +9,7 @@ Public Class Sensor
       Result = dbConnection(run usp_getLocationByID)
       
       If Result > 0 Then
+        Dim test As Log = Log.Instance
         Return Result
       End
     Catch
